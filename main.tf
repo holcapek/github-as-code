@@ -17,3 +17,13 @@ module "oci_always_free_infra_as_code" {
   initial_commit_author_name  = "Jan Holcapek"
   initial_commit_author_email = "holcapek@gmail.com"
 }
+
+module "jenkins_image" {
+  source                      = "./modules/github-repository"
+  github_owner                = "holcapek"
+  github_token                = var.github_token
+  github_ssh_private_key_path = var.github_ssh_private_key_path
+  repository_name             = "jenkins-image"
+  initial_commit_author_name  = "Jan Holcapek"
+  initial_commit_author_email = "holcapek@gmail.com"
+}
