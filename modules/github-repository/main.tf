@@ -47,6 +47,7 @@ resource "github_branch_protection" "default_branch_protection" {
   allows_force_pushes             = false
   allows_deletions                = false
   require_conversation_resolution = true
+  enforce_admins                  = true
   required_status_checks {
     strict = true
   }
