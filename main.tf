@@ -1,6 +1,6 @@
 module "github_as_code" {
   source                      = "./modules/github-repository"
-  github_owner                = "holcapek"
+  github_owner                = "planet-devops-xyz"
   github_token                = var.github_token
   github_ssh_private_key_path = var.github_ssh_private_key_path
   repository_name             = "github-as-code"
@@ -10,7 +10,7 @@ module "github_as_code" {
 
 module "oci_always_free_infra_as_code" {
   source                      = "./modules/github-repository"
-  github_owner                = "holcapek"
+  github_owner                = "planet-devops-xyz"
   github_token                = var.github_token
   github_ssh_private_key_path = var.github_ssh_private_key_path
   repository_name             = "oci-always-free-infra-as-code"
@@ -20,7 +20,7 @@ module "oci_always_free_infra_as_code" {
 
 module "jenkins_image" {
   source                      = "./modules/github-repository"
-  github_owner                = "holcapek"
+  github_owner                = "planet-devops-xyz"
   github_token                = var.github_token
   github_ssh_private_key_path = var.github_ssh_private_key_path
   repository_name             = "jenkins-image"
